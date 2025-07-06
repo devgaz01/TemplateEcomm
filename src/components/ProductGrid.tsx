@@ -4,7 +4,7 @@ import ProductCard from './ProductCard';
 const products = [
   {
     id: 1,
-    name: 'Custom T-Shirt',
+    name: 'Premium Custom T-Shirt',
     price: 24.99,
     image: 'https://images.pexels.com/photos/8532616/pexels-photo-8532616.jpeg?auto=compress&cs=tinysrgb&w=500',
     category: 'T-Shirts',
@@ -12,7 +12,7 @@ const products = [
   },
   {
     id: 2,
-    name: 'Personalized Hoodie',
+    name: 'Luxury Personalized Hoodie',
     price: 49.99,
     image: 'https://images.pexels.com/photos/7679720/pexels-photo-7679720.jpeg?auto=compress&cs=tinysrgb&w=500',
     category: 'Hoodies',
@@ -20,7 +20,7 @@ const products = [
   },
   {
     id: 3,
-    name: 'Custom Boxer Shorts',
+    name: 'Designer Boxer Shorts',
     price: 19.99,
     image: 'https://images.pexels.com/photos/7679720/pexels-photo-7679720.jpeg?auto=compress&cs=tinysrgb&w=500',
     category: 'Underwear',
@@ -28,7 +28,7 @@ const products = [
   },
   {
     id: 4,
-    name: 'Premium T-Shirt',
+    name: 'Elite Custom T-Shirt',
     price: 29.99,
     image: 'https://images.pexels.com/photos/8532616/pexels-photo-8532616.jpeg?auto=compress&cs=tinysrgb&w=500',
     category: 'T-Shirts',
@@ -36,7 +36,7 @@ const products = [
   },
   {
     id: 5,
-    name: 'Zip-Up Hoodie',
+    name: 'Premium Zip-Up Hoodie',
     price: 54.99,
     image: 'https://images.pexels.com/photos/7679720/pexels-photo-7679720.jpeg?auto=compress&cs=tinysrgb&w=500',
     category: 'Hoodies',
@@ -44,7 +44,7 @@ const products = [
   },
   {
     id: 6,
-    name: 'Designer Boxers',
+    name: 'Luxury Designer Boxers',
     price: 24.99,
     image: 'https://images.pexels.com/photos/7679720/pexels-photo-7679720.jpeg?auto=compress&cs=tinysrgb&w=500',
     category: 'Underwear',
@@ -54,14 +54,14 @@ const products = [
 
 const ProductGrid: React.FC = () => {
   return (
-    <section id="products" className="py-16 bg-gray-50">
+    <section id="products" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Our Products
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
+            Our Premium Collection
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Discover our range of high-quality clothing items, all ready for your personal touch
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Discover our range of high-quality clothing items, all ready for your personal touch and creative expression
           </p>
         </div>
 

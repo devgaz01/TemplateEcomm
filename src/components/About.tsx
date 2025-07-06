@@ -26,42 +26,42 @@ const About: React.FC = () => {
   ];
 
   return (
-    <section id="about" className="py-16 bg-gray-50">
+    <section id="about" className="py-20 bg-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Why Choose CustomWear?
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
+            Why Choose SurviKit?
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             We're passionate about helping you express your unique style through high-quality personalized clothing
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {values.map((value, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-blue-600">
+            <div key={index} className="bg-white p-8 rounded-2xl shadow-lg text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200">
+              <div className="bg-black w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 text-white">
                 {value.icon}
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">{value.title}</h3>
-              <p className="text-gray-600">{value.description}</p>
+              <h3 className="text-xl font-bold text-black mb-3">{value.title}</h3>
+              <p className="text-gray-600 leading-relaxed">{value.description}</p>
             </div>
           ))}
         </div>
 
-        <div className="mt-16 bg-white rounded-2xl p-8 shadow-md">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="bg-white rounded-3xl p-12 shadow-2xl border border-gray-200">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
                 Our Story
               </h3>
-              <p className="text-gray-600 mb-4">
-                Founded in 2020, CustomWear started with a simple mission: to make personalized clothing accessible to everyone. We believe that what you wear should reflect who you are.
+              <p className="text-gray-600 mb-6 text-lg leading-relaxed">
+                Founded in 2020, SurviKit started with a simple mission: to make personalized clothing accessible to everyone. We believe that what you wear should reflect who you are.
               </p>
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-600 mb-8 text-lg leading-relaxed">
                 From our humble beginnings in a small studio to serving thousands of customers worldwide, we've never lost sight of our commitment to quality, creativity, and customer satisfaction.
               </p>
-              <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+              <button className="bg-black text-white px-8 py-4 rounded-xl hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 font-semibold">
                 Learn More About Us
               </button>
             </div>
@@ -69,7 +69,7 @@ const About: React.FC = () => {
               <img 
                 src="https://images.pexels.com/photos/7679720/pexels-photo-7679720.jpeg?auto=compress&cs=tinysrgb&w=600" 
                 alt="Our team"
-                className="rounded-lg shadow-md"
+                className="rounded-2xl shadow-2xl"
               />
             </div>
           </div>

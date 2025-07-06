@@ -6,7 +6,7 @@ const CustomizationSection: React.FC = () => {
     {
       icon: <Palette className="w-8 h-8" />,
       title: 'Choose Colors',
-      description: 'Select from hundreds of color combinations to match your style'
+      description: 'Select from hundreds of color combinations to match your unique style'
     },
     {
       icon: <Type className="w-8 h-8" />,
@@ -26,37 +26,37 @@ const CustomizationSection: React.FC = () => {
   ];
 
   return (
-    <section id="customize" className="py-16 bg-white">
+    <section id="customize" className="py-20 bg-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Customize Your Way
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Our easy-to-use design tools let you create exactly what you envision
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            Our intuitive design tools let you create exactly what you envision with professional results
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {features.map((feature, index) => (
-            <div key={index} className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-blue-600">
+            <div key={index} className="text-center group">
+              <div className="bg-gray-800 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 text-white group-hover:bg-white group-hover:text-black transition-all duration-300 transform group-hover:scale-110">
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
+              <p className="text-gray-400 leading-relaxed">{feature.description}</p>
             </div>
           ))}
         </div>
 
-        <div className="bg-gradient-to-r from-blue-600 to-purple-700 rounded-2xl p-8 text-white text-center">
-          <h3 className="text-2xl md:text-3xl font-bold mb-4">
+        <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-3xl p-12 text-center border border-gray-700">
+          <h3 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Create Something Amazing?
           </h3>
-          <p className="text-lg mb-6 opacity-90">
-            Start designing your personalized clothing today with our intuitive design studio
+          <p className="text-xl mb-8 text-gray-300 leading-relaxed">
+            Start designing your personalized clothing today with our professional design studio
           </p>
-          <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+          <button className="bg-white text-black px-10 py-4 rounded-xl font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 text-lg">
             Launch Design Studio
           </button>
         </div>
